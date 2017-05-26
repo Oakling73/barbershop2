@@ -1,0 +1,38 @@
+.clearfix() {
+  *zoom: 1;
+
+  &::after {
+    content: "";
+    display: table;
+    line-height: 0;
+    clear: both;
+  }
+}
+
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  @media @tablet-widths {
+    width: 640px;
+  }
+  @media @desktop-widths {
+    width: 960px;
+  }
+}
+
+
+.valign-helper {
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+
+.no-outlines() {
+  outline: none;
+}

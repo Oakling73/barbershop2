@@ -1,0 +1,44 @@
+
+@font-face {
+	font-family: "PTSansNarrow";
+	src: url("../fonts/PTN57F_W.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PTSansNarrowBold";
+	src: url("../fonts/PTN77F_W.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: PTSansNarrow, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: 400;
+  color: #f7f4f1;
+
+  background: @bg-darkgray;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

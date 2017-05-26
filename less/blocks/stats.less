@@ -1,0 +1,56 @@
+
+.stats {
+  .container();
+
+  &__header {
+    min-height: 130px;
+    background: rgba(49, 2, 249, 0.5);
+    padding: 38px 26px;
+  }
+
+  &__list {
+    width: 100%;
+    min-height: 380px;
+    background: rgba(249, 143, 2, 0.5);
+  }
+}
+@media @tablet-widths {
+
+  .stats {
+    position: relative;
+    z-index: 1;
+    margin-top: -185px + (-38) + (-38);
+
+    &__header {
+      min-height: 185px;
+    }
+
+    &__list {
+      min-height: 320px;
+    }
+  }
+}
+
+@media @desktop-widths {
+
+  .stats {
+
+    .clearfix();
+    margin-top: -160px;
+
+    &__header {
+      float: left;
+      width: 210px;
+      min-height: 244px;
+      padding-left: 40px;
+      padding-right: 70px;
+    }
+
+    &__list {
+      float: right;
+      width: 640px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
